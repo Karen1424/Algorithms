@@ -21,7 +21,6 @@ namespace Utility
     
         std::cout << std::endl;
     }
-
 }
 
 // the complexity of the algorithm O(N*N)
