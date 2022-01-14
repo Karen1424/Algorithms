@@ -2,11 +2,7 @@
 #include <vector>
 
 //binary search works only for sorted arrays
-/*_________________________________________*/
-
 // the complexity of the algorithm O(logN)
-
-
 //binary serach recursive implementation
 
 int binarySearch(int * array, int start, int end, int key)
@@ -22,11 +18,11 @@ int binarySearch(int * array, int start, int end, int key)
 
         return binarySearch(array,mid + 1,end,key); // if key smaller  array[mid]
     }
-
     return -1; // if there is no such key in the array
 }
 
 // binary serach iterative implementation
+
 int binarySearch(std::vector<int> & vec, int key)
 {
     int start = 0;
@@ -48,9 +44,7 @@ int binarySearch(std::vector<int> & vec, int key)
             start = mid + 1;
         }
     }
-
     return -1; // if there is no such key in the array
-
 }
 
 // binary search: find the sorted array values` (0 or 1), index of the last 0
@@ -70,7 +64,6 @@ int indexOfLastZeroBinnarySearch(int * array, int size)
 
         if(array[mid] == 0) start = mid + 1;
     }
-
     return -1; // if there is no 0 in the array
 }
 int main() {
